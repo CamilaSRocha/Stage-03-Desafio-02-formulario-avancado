@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    font-family: 'Staatliches', sans-serif;
-    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
     padding: 0;
 }
 
@@ -16,11 +16,13 @@ body::before {
 
     position: absolute;
     background: #3C2941;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
 #page {
-    
+    margin: 0 auto;
     width: 750px;
 }
 
@@ -28,27 +30,114 @@ body::before {
     align-items: center;
     justify-content: center;
 
-    color: #ffffff;
+    margin-top: 107px;
+}
+
+h1,
+legend,
+button {
+    font-family: 'Staatliches', sans-serif;
 }
 
 header h1 {
     font-size: 36px;
     line-height: 45px;
     text-align: center;
-
-    padding-top: 107px;
+    
+    color: #ffffff;
 }
 
 header p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 46px;
-    vertical-align: top; 
     text-align: center;
-    
+    color: #ffffff;
 }
 
-header img {
+#img {
     display: flex;
-    align-items: center;
+    margin: auto;
 }
+
+fieldset {
+    border: none;
+    margin-top: 33px;
+}
+
+#personal-info {
+
+    text-align: center;
+    color: #ffffff;
+
+    background: #DC7236;
+    height: 133px;
+    border-radius: 20px 20px 0 0;
+
+    padding: 50px;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background: #ffffff;
+    
+    padding: 32px 64px 0;
+}
+
+legend {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: #3B2551;
+
+    width: 100%;
+
+    margin-top: 32px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-wrapper label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3E325A;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+    color: #3E325A;
+}
+
+.input-wrapper input {
+    height: 55px;
+
+    padding: 0 24px;
+
+    background: #FDFCFE;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.col-2 {
+    display: flex;
+    gap: 22px;
+}
+
+.col-2 > div {
+    width: 50%;
+}
+

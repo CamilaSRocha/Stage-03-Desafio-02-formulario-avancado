@@ -16,13 +16,33 @@
         <header>
             <h1>Avalie a sua mentoria</h1>
             <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
-            <img src="./images/img1.png" alt="balao com cinco estrelas" />
+            <img id="img" src="./images/img1.png" alt="balao com cinco estrelas" />
         </header>
-        <div id="my-form">
-            <form>
+
+        <form id="my-form">
+            <fieldset>
+                <legend id="personal-info">Informações Pessoais</legend>
                 
-            </form>
-        </div>
+                <div class="fieldset-wrapper">
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text" name="surname" id="surname">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                </div>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
