@@ -27,17 +27,17 @@
                     <div class="col-2">
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="surname">Sobrenome</label>
-                            <input type="text" name="surname" id="surname">
+                            <input type="text" name="surname" id="surname" required>
                         </div>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="email">Email <span>(digite um email válido)</span></label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                 </div>
@@ -49,7 +49,7 @@
 
                     <div class="input-wrapper">
                         <label for="mentor-name">Selecione quem foi o seu mentor</label>
-                        <select id="mentor-name">
+                        <select id="mentor-name" required>
                             <option value="mentor-1">Nome do mentor 1</option>
                             <option value="mentor-2">Nome do mentor 2</option>
                             <option value="mentor-3">Nome do mentor 3</option>
@@ -58,7 +58,7 @@
 
                     <div class="input-wrapper">
                         <label for="feedback">Feedback sobre o mentor</label>
-                        <textarea id="feedback"></textarea>
+                        <textarea id="feedback" required></textarea>
                     </div>
 
                     <div class="checkbox-wrapper">
@@ -90,6 +90,14 @@
                     </div>
                 </div>
             </fieldset>
+
+            <div class="button-submit">
+                <input 
+                id="button-submit"
+                form="my-form"
+                type="submit" 
+                value="Salvar" />
+            </div>
         </form>
     </div>
 </body>
